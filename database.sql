@@ -22,4 +22,4 @@ SELECT * FROM "accounts" WHERE "account_balance" > 100;
 --8. Add a new record.
 INSERT INTO "accounts" ("user_id", "username", "city", "transactions_completed", "transactions_attempted", "account_balance") VALUES (599, 'steve', 'bangladesh', 5, 10, 50000);
 
-DELETE * FROM "accounts" WHERE ("city" = 'phoenix' OR "city" = 'miami') AND "transactions_completed" < 5;
+DELETE FROM "accounts" WHERE ("city" = 'phoenix' OR "city" = 'miami') AND "transactions_completed" < 5;
